@@ -1,0 +1,22 @@
+package SpringDemo;
+
+import javax.sql.DataSource;
+@Component
+public class DatabaseConfiguration {
+	private String url;
+	private String username;
+	private String driver;
+	private String password;
+	public DatabaseConfiguration(String url, String username, String driver, String password) {
+		super();
+		this.url = url;
+		this.username = username;
+		this.driver = driver;
+		this.password = password;
+	}
+	public DataSource getDataSource() {
+		return null;
+		
+	}
+
+}

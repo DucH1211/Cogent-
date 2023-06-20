@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    <context:annotation-config/>
+    <!-- bean definitions here -->
+	<bean id = "emp" class = "SpringDemo.Employee" autowire = "constructor" scope = "prototype" init-method = "predestroy" destroy-method = "postconstruct()" /> <!-- scope singleton: instantiated once per lifetime prototype: instantiated multiple time. -->
+	<!-- <property name = "address" ref = "address" -->
+	<!-- ref = 'add' and id = 'add' of the referring id have to be the same -->
+	
+	<bean id = "datasource" class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value = "com.mysql.cjjdbc.Driver"/>
+		<property name="url" value = "jdbc:mysql://localhost/javademo"/>
+		<property name="username" value = "Duke Ho"/>
+		<property name="password" value = "12016"/>
+	</bean>
+	<bean id = "add" class = "SpringDemo.Address"/>
+	
+
+</beans>

@@ -1,0 +1,45 @@
+package cogent.edu.corejava.Inheritance;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class EmployeeMap implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	public static Map H = new HashMap();
+	private Employee e = null;
+
+	public void setE(Employee e) {
+		this.e = e;
+	}
+
+	public void insert() {
+		H.put(e.empid,e);
+		System.out.println(H.toString());
+	}
+	public void delete(int id){
+		if(H.containsKey(id))
+			{H.remove(id);
+			System.out.println(H.toString());}
+		else
+		
+	}
+	public Object read(int id) {
+		return H.get(id);
+	}
+//	public void update(int id) {
+//		H.remove(id);
+//		H.put(id, e);
+//		System.out.println(H.toString());
+//	}
+	public String toString()
+	{
+		return H.toString();
+	}
+}

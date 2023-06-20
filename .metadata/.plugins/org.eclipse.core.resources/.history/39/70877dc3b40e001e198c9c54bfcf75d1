@@ -1,0 +1,5 @@
+jdbc.driver = com.mysql.cj.jdbc.Driver
+jdbc.url = jdbc:mysql://localhost/javademo
+jdbc.username = root
+jdbc.password = TommyTmy!12016ZXC
+comment = "This file store key value pair like a map."

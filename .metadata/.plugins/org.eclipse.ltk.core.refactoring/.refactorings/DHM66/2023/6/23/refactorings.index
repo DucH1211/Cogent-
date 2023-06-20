@@ -1,0 +1,16 @@
+1685978441111	Delete element
+1685989194939	Encapsulate field 'something'
+1685989200484	Encapsulate field 'deptId'
+1685997041293	Encapsulate field 'street'
+1685997071799	Encapsulate field 'Zipcode'
+1685997100397	Encapsulate field 'city'
+1685997104731	Encapsulate field 'country'
+1685997107630	Encapsulate field 'State'
+1686167604861	Delete element
+1686237451260	Move compilation unit
+1686237467168	Rename package 'cogent.edu.core.java.Syncronize'
+1686239557735	Rename type 'MultiplicationTable'
+1686242728831	Copy compilation unit
+1686339678336	Copy compilation unit
+1686343688656	Rename type 'Queue'
+1686344718709	Rename type 'Set'

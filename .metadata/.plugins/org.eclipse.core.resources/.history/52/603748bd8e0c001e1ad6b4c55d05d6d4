@@ -1,0 +1,22 @@
+package SpringDemo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.springframework.context.ApplicationContext;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+public class TestSpringDemoLoadDataSource {
+
+	public static void main(String[] args) throws SQLException {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); //default will be applicationContext.xml
+		System.out.println(context);
+		DriverManagerDataSource emp1 = (DriverManagerDataSource)context.getBean("");
+		Connection con = emp1.getConnection();
+		Strign query = "select * from employee";
+	}
+
+}

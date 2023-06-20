@@ -1,0 +1,17 @@
+package cogent.edu.Advanced.java.JDBC;
+import java.sql.*;
+public class testJDBC {
+	public static void main(String[] args) throws ClassNotFoundException,SQLException
+	{
+		Class c = Class.forName("com.mysql.cj.jdbc.Driver");
+		System.out.println(c);
+		String url = "jdbc:mysql://localhost/funbanking";
+		String user = "root";
+		String password ="TommyTmy!12016ZXC";
+		Connection con = DriverManager.getConnection(url,user,password);
+		System.out.println("Connection: " + con);
+		Statement stmt = con.createStatement();
+		String query = "create database javademo" ; //query have to be in a String
+		stmt.execute(query);
+	}
+}

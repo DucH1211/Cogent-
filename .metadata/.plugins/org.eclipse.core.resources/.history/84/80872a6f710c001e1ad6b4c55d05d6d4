@@ -1,0 +1,8 @@
+package cogent.edu.core.java.Assesment2;
+
+public class Department {
+	int dept_id;
+	String dept_name;
+	Employee employee;
+	
+}

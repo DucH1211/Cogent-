@@ -1,0 +1,28 @@
+package SpringDemo;
+
+public class Address {
+	int a_id;
+	String name;
+	String city;
+	
+	//setter getter
+	public int getA_id() {
+		return a_id;
+	}
+	public void setA_id(int a_id) {
+		this.a_id = a_id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	//
+}

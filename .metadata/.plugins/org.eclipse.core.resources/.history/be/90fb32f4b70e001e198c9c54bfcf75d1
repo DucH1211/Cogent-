@@ -1,0 +1,27 @@
+package SpringDemo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class TestComponents {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
+		DatabaseConfiguration dc = (DatabaseConfiguration)context.getBean(DatabaseConfiguration.class);
+		DataSource ds = dc.getDataSource();
+		Connection con = ds.getConnection();
+		String query = "select * from funtable";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(query);
+		
+		
+	}
+
+}

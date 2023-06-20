@@ -1,0 +1,39 @@
+package cogent.edu.corejava.STREAM;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+public class testStream {
+	public static void put(Integer num) {
+		System.out.println(num);
+	}
+	public static booleanisEven(Integer num)
+	{
+		if(num%2 == 0)
+			return true;
+		else return false;
+	}
+	public static void getIntegers(List<Integer> list) {
+		//Functional Programming
+		Stream<Integer> s = list.stream();//Specific to Collection data.
+		
+		
+		s.forEach(testStream::put);  
+		//Stream foreach perform a certain action for every element in the Stream
+		
+		//Another approach is to use Lambda Express
+		s.forEach(x-> System.out.println(x));
+		
+		//Third syntax
+		
+		s.forEach(System.out::println);
+	}
+//display the list of integers
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> numbers = List.of(12,13,43,65,13,1); // Create a list of numbers quickly
+		getIntegers(numbers);
+		
+	}
+
+}

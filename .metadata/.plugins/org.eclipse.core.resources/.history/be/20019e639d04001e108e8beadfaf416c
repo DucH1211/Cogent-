@@ -1,0 +1,25 @@
+package cogent.edu.corejava.String;
+import java.util.Scanner;
+
+public class Reverse {
+
+	public static char[] reverseString(String s)
+	{	char[] result = new char[s.length()];
+		int j = 0;
+		for(int i = s.length() - 1; i > 0; i--)
+		{
+			j++;
+			result[j] =  s.charAt(i);
+		}
+		return result;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Write something:he");
+		String s = sc.nextLine();
+		char[] c = reverseString(s);
+		System.out.println(c.toString());
+	}
+
+}

@@ -1,0 +1,5 @@
+jdbc.driver = org.springframework.jdbc.datasource.DriverManagerDataSource
+jdbc.url = jdbc:mysql://localhost/javademo
+jdbc.username = 
+jdbc.password = 
+comment = "This file store key value pair like a map."

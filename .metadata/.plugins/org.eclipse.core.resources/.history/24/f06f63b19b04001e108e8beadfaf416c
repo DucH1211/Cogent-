@@ -1,0 +1,21 @@
+package cogent.edu.corejava.String;
+import java.util.Scanner;
+
+public class Reverse {
+
+	public static String reverseString(String s)
+	{	String result = null;
+		char[] c = null;
+		for(int i = s.length(); i > 0; i++)
+		{
+			result+= s.charAt(i);
+		}
+		return result;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		sc.nextLine();
+	}
+
+}

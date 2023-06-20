@@ -1,0 +1,14 @@
+package cogent.edu.corejava.String;
+
+public class TestString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Chandra";
+//		String s2 = "Chandra"; // this is one String object created.
+		String s2 = new String("Chandra");
+		System.out.println(s1==s2);
+		System.out.println(s1.equals(s2));
+	}
+
+}

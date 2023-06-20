@@ -1,0 +1,13 @@
+#comment = "This file store key value pair like a map."
+#mysql
+jdbc.driver = com.mysql.cj.jdbc.Driver
+jdbc.url = jdbc:mysql://localhost/javademo
+jdbc.username = root
+jdbc.password = TommyTmy!12016ZXC
+
+#oracle, if you want more than one database connection
+jdbc.oracle.driver = oracle.jdbc.OracleDriver
+jdbc.oracle.url = jdbc:oracle://localhost/system
+jdbc.oracle.user = system
+jdbc.oracle.password = root
+

@@ -1,0 +1,20 @@
+package cogent.edu.corejava.String;
+
+public class sortStringName {
+	public void sort(String[] names) {
+		for(int i = 0; i < names.length-1; i++)
+		{
+			for(int j = 1; j < names.length; j++){
+			}
+				if(names[i].compareTo(names[j]) < 0) {
+					
+			}
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names = {"Dadfe","Hfaadf","Asdgfe","aosidoi","aosidoi"};
+		names = ;
+	}
+
+}

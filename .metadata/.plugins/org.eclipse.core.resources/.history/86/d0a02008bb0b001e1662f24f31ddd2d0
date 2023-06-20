@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    
+     <context:annotation-config/>
+     <context:component-scan base-package="base.package"/>
+    
+     <!-- bean definitions here -->
+	<bean id = "emp" class = "SpringDemo.Employee">
+	<property name = "address" ref = "add"></property> <!-- need a setter method for address -->
+	</bean>
+	
+	<!-- ref = 'add' and id = 'add' of the refering id have to be the same -->
+	<bean id = "add" class = "SpringDemo.Employee"/>
+</beans>

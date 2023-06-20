@@ -1,0 +1,9 @@
+package cogent.edu.Advanced.java.JDBC;
+import java.sql.*;
+public class testJDBC {
+	public static void main(String[] args) throws ClassNotFoundException,SQLException
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		System.out.println(c);
+	}
+}

@@ -1,0 +1,11 @@
+package cogent.edu.corejava.String;
+
+public class TestString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Chandra";
+		String s1 = new String("Chandra");
+	}
+
+}

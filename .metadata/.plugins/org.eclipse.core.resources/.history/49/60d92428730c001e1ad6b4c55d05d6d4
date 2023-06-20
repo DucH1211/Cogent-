@@ -1,0 +1,39 @@
+package cogent.edu.core.java.Assesment2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class connectEmployee {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		
+		//connect to database
+		String url = "jdbc:mysql://localhost/javademo";
+		String user = "root";
+		String password = "TommyTmy!12016ZXC";
+		
+		Connection con = null;
+		//connect
+		con = 	DriverManager.getConnection(url,user,password);
+		
+		
+		//Create new Table
+		String query = "create table if not exists employee"
+					+ "("
+					+ "emp_id int auto_increment primary key,"
+					+ "name varchar(100),"
+					+ "age int,"
+					+ "salary int"
+					+ ")";
+		PreparedStatement stmt =  null;
+		//run statement create table;
+		stmt = 	con.prepareStatement(query);
+		stmt.executeUpdate();
+			
+
+	}
+	
+}

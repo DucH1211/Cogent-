@@ -1,0 +1,55 @@
+package cogent.edu.core.java.Assesment2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class connectEmployee {
+
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		//connect to database
+		String url = "jdbc:mysql://localhost/javademo";
+		String user = "root";
+		String password = "TommyTmy!12016ZXC";
+		
+		
+		ClassLoader loader = Main.getClassLoader(classesUrl, props);
+		Connection con = null;
+		//connect
+		con = 	DriverManager.getConnection(url,user,password);
+		
+		
+		//Create new Table Employee
+		String query = "create table if not exists employee"
+					+ "("
+					+ "emp_id int auto_increment primary key,"
+					+ "name varchar(100),"
+					+ "age int,"
+					+ "salary int"
+					+ ")";
+		PreparedStatement stmt =  null;
+		//run statement create table;
+		stmt = 	con.prepareStatement(query);
+		stmt.executeUpdate();
+		
+		//create another table with foreign key
+		query = "create table if not exists Department"
+				+ "("
+				+ "dept_id int auto_increment primary key,"
+				+ "emp_id int,"
+				+ "dept_name varchar(100),"
+				+ "employee Employee,"
+				+ "constraint empfk_id foreign key (emp_id) references employee(emp_id)"
+				+ ")";
+
+		stmt = con.prepareStatement(query);
+		stmt.executeUpdate();
+		
+
+		
+		
+	}
+	
+}

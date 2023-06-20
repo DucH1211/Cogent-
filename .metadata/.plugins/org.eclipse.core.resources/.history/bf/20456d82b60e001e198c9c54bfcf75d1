@@ -1,0 +1,36 @@
+package SpringDemo;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.stereotype.Component;
+
+@Component
+public class DatabaseConfiguration {
+	@Value("${jdbc.mysql.url}") //$ is runtime expression
+	private String url;
+	@Value("${jdbc.mysql.username}")
+	private String username;
+	@Value("${jdbc.mysql.driver}")
+	private String driver;
+	@Value("${jdbc.mysql.password}")
+	private String password;
+	public DatabaseConfiguration(String url, String username, String driver, String password) {
+		super();
+		this.url = url;
+		this.username = username;
+		this.driver = driver;
+		this.password = password;
+	}
+	public DataSource getDataSource() {
+		DriverManagerDataSource dm = new DriverManagerDataSource();
+		dm.setDriverClassName(driver);
+		dm.setUrl(url);
+		dm.setUsername(username);;
+		dm.setPassword(password);
+		return null;
+		
+	}
+
+}

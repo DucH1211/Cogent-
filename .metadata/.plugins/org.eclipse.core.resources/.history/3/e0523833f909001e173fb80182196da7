@@ -1,0 +1,20 @@
+package cogent.edu.corejava.STREAM;
+
+import java.util.List;
+
+public class testStream {
+	public static void getIntegers(List<Integer> list) {
+		for(int a:list)
+		{
+			System.out.println(a);
+		}
+	}
+//display the list of integers
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> numbers = List.of(12,13,43,65,13,1); // Create a list of numbers quickly
+		getIntegers(numbers);
+		
+	}
+
+}

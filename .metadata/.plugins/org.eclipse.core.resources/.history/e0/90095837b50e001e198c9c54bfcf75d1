@@ -1,0 +1,9 @@
+package SpringDemo;
+
+public class DatabaseConfiguration {
+	private String url;
+	private String username;
+	private String driver;
+	private String password;
+
+}

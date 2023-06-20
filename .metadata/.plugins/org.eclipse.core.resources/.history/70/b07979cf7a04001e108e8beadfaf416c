@@ -1,0 +1,12 @@
+package cogent.edu.corejava.String;
+
+public class TestString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Chandra";
+//		String s2 = new String("Chandra");
+		String s2 = "Chandra" // this is one object
+	}
+
+}

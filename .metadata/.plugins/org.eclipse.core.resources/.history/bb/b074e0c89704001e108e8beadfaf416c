@@ -1,0 +1,11 @@
+package cogent.edu.corejava.String;
+
+public class sortStringName {
+	public void sort(String[] names)
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names = new String[5];
+		names = {"Dadfe","Hfaadf","Asdgfe","aosidoi","aosidoi"};
+	}
+
+}

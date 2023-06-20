@@ -1,0 +1,19 @@
+package SpringDemo;
+
+import org.springframework.context.ApplicationContext;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestSpringDemoLoadDataSource {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); //default will be applicationContext.xml
+		System.out.println(context);
+		DriverManagerDataSource emp1 = (DriverManagerDataSource)context.getBean(SpringDemo.Employee.class);
+		
+		
+		
+	}
+
+}

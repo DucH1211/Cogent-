@@ -1,0 +1,24 @@
+package SpringDemo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestSpringDemo {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); //default will be applicationContext.xml
+//		System.out.println(context);
+//		Employee emp1 = (Employee)context.getBean(SpringDemo.Employee.class);
+//		Employee emp2 = (Employee)context.getBean(SpringDemo.Employee.class);
+//		
+//		System.out.println(emp1);
+//		System.out.println(emp2); //beans rechieve are the same in same context bean only instantiated once in its lifecycle
+//		System.out.println(emp1.getAddress());
+		
+		
+		
+		
+	}
+
+}

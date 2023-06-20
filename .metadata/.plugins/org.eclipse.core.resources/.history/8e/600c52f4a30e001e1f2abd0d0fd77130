@@ -1,0 +1,57 @@
+package SpringDemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
+
+public class Employee {
+	private int id;
+	private String name;
+	
+	@Autowired
+	private Address address;
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Employee(Address address) {
+		super();
+		this.address = address;
+		System.out.println("Constructor running");
+	}
+	//setter getter
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+		System.out.println("address Setter in Employee ran");
+	}
+	
+	//bean life cycle methods will execute after bean started 
+	@javax.annotation.PostConstruct
+	public void postconstruct() {
+		System.out.println("Bean Created; Example of things to do in here is establish database connection");
+	}
+	
+	@javax.annotation.PreDestroy
+	public void predestroy() {
+		System.out.println("Bean Destroyed; Ecample of things to do in here is: close database connection");
+	}
+	
+	
+}
