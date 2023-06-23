@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\EE_Workspace\Cogent\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\EE_Workspace\Cogent\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Spring-HelloWorld" path="/Spring-HelloWorld" reloadable="true" source="org.eclipse.jst.j2ee.server:Spring-HelloWorld"/></Host>
+      <Context docBase="E:\EE_Workspace\Cogent\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\EE_Workspace\Cogent\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMVCDynamicWeb" path="/SpringMVCDynamicWeb" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVCDynamicWeb"/></Host>
     </Engine>
   </Service>
 </Server>

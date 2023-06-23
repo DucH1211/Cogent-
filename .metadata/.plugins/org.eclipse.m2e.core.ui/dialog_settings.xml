@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\EE_Workspace\Cogent\JPADemo\src\main\java\META-INF"/>
+			<item value="E:\EE_Workspace\Cogent\SpringMVCDynamicWeb"/>
 			<item value="E:\EE_Workspace\Cogent\SpringMVC"/>
 			<item value="E:\EE_Workspace\Cogent"/>
 			<item value="E:\EE_Workspace\Cogent\DHM66"/>
@@ -28,22 +30,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.cogent.web.Spring_HelloWorld"/>
-			<item value="com.cogent.web.Spring_mvc_web"/>
-			<item value="com.cogent.web.spring_mvc_maven"/>
-			<item value="com.cogent.web.MavenWebapp"/>
-			<item value="com.cogent.MavenWebAPp"/>
 		</list>
 		<list key="groupId">
-			<item value="com.cogent.web"/>
-			<item value="com.cogent"/>
 		</list>
 		<list key="artifactId">
-			<item value="Spring-HelloWorld"/>
-			<item value="Spring-mvc-web"/>
-			<item value="spring-mvc-maven"/>
-			<item value="MavenWebapp"/>
-			<item value="MavenWebAPp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,10 +49,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cogent"/>
 		</list>
 		<list key="name">
+			<item value="TestJPA"/>
 		</list>
 		<list key="artifactId">
+			<item value="TestJPA"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -77,7 +70,43 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.cogent.dynamicweb"/>
+		</list>
+		<list key="name">
+			<item value="SpringMVCDynamicWeb"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringMVCDynamicWeb"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\EE_Workspace\Cogent\FirstSpringBoot"/>
+			<item value="E:\EE_Workspace\Cogent\CRUDwithSpring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
