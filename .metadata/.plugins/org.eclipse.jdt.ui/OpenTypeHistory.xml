@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=AssignmentSpringBoot/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springboot.conversion.AssignmentSpringBoot.dao{StudentDAO.java[StudentDAO" modifiers="513" timestamp="1687731634436"/>
+    <typeInfo handle="=SpringBootSecurity/C:\/Users\/tmyho\/.m2\/repository\/org\/springframework\/security\/spring-security-oauth2-resource-server\/6.1.1\/spring-security-oauth2-resource-server-6.1.1.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.security=/=/maven.artifactId=/spring-security-oauth2-resource-server=/=/maven.version=/6.1.1=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.security.oauth2.server.resource.web(BearerTokenResolver.class[BearerTokenResolver" modifiers="1537" timestamp="1687814558046"/>
 </typeInfoHistroy>

@@ -1,0 +1,30 @@
+package cogent.edu.core.java.Assesment2;
+
+public class Department {
+	private final int dept_id;
+	private String dept_name;
+	private Employee employee;
+	public Department(int dept_id, String dept_name, Employee employee) {
+		super();
+		this.dept_id = dept_id;
+		this.dept_name = dept_name;
+		this.employee = employee;
+	}
+
+	public int getDept_id() {
+		return dept_id;
+	}
+	public String getDept_name() {
+		return dept_name;
+	}
+	public void setDept_name(String dept_name) {
+		this.dept_name = dept_name;
+	}
+	public Employee getEmployee() {
+		return employee;
+	}
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+	
+}
