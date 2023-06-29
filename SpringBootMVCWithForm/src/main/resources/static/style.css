@@ -1,0 +1,60 @@
+@charset "UTF-8";
+h3 {
+	color: blue;
+}
+	div.coolForm{
+	background:#f2f2f2;
+	position: relative;
+	border: 15px solid #486ED7;
+	border-radius: 4px;
+	padding: 50px;
+	margin: 30px; 
+	}
+	hr{
+	width: 100%;
+	background-color: #ccc;
+	padding: 10px;
+	}
+	input[type=text], select {
+	  width: 100%;
+	  padding: 10px 20px;
+	  margin: 4px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	}
+	
+	input[type=submit] {
+	  width: 100%;
+	  background-color: gray;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+	h3{
+	color: #486ED7;
+	}
+	label{
+	text-decoration: overline;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #486ED7;
+	}
+	  input[type="date"]{
+	    background-color: #0080ff;
+	    padding: 15px;
+	    position: absolute;
+	    transform: translate(-50%,-50%);
+	    top: 50%;
+	    left: 50%;
+	    font-family: "Roboto Mono",monospace;
+	    color: #ffffff;
+	    font-size: 18px;
+	    border: none;
+	    outline: none;
+	    border-radius: 5px;
+}

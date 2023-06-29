@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-@RestController
+//@RestController
 public class HomeController {
 	@Autowired
 	UserDAO userDAO;
@@ -42,8 +42,6 @@ public class HomeController {
 	}
 	@GetMapping(value="/getUsers")
 	public ArrayList getUsers() throws IOException{
-		
-		
 		return al;
 	}
 	

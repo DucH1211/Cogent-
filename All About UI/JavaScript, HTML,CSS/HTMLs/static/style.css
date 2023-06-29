@@ -1,0 +1,68 @@
+h1,h2,h3,p{
+    color: blue;
+    font-family:sans-serif;
+}
+h1{
+    color: black;
+    font-size: xx-large;
+
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    /* text-transform: lowercase; */
+}
+
+h2{
+    font-size: 40px;
+}
+h4{
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+}
+p{
+    color: #444;
+    font-size: large;
+    line-height: normal;
+}
+ul.related li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+}
+ footer p{ /* nested selector */
+    color: #444;
+    font-size: small;
+    line-height: normal;
+
+}
+#copyright{
+    color: blueviolet;
+}
+dd.related-author{
+    font-weight: bold;
+}
+header{
+    background-color: azure;
+}
+/* li:first-child{
+    color: rgba(255, 0, 0, 0.5);
+}
+li:last-child{
+    color: blue;
+    font-style: italic;
+}
+li:nth-child(2)
+{
+    color: green;
+    font-style: italic;
+} */
+/* li:nth-child(odd)
+{
+    color: aquamarine;
+} */
+li:nth-child(even){
+    color: blueviolet;
+}
+article p:first-child{
+    color: red;
+}
