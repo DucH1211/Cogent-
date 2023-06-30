@@ -64,5 +64,20 @@ li:nth-child(even){
     color: blueviolet;
 }
 article p:first-child{
-    color: red;
+    color: rgb(21, 255, 0);
+}
+a:link{
+    color:greenyellow;
+}
+a:visited{
+    color: coral;
+}
+a:hover{
+    color:blue;
+}
+p::first-letter{
+    font-size: 50px;
+}
+p::first-line{
+    font-size: x-large;
 }

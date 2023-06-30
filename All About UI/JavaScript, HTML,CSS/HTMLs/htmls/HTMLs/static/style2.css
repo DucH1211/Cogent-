@@ -1,0 +1,91 @@
+body{
+    margin-left: 17%;
+    margin-right: 29%;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header#title{
+    background-color: lightgray;
+    color:rgb(38, 168, 168);
+    text-transform: capitalize;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header#title::first-letter{
+    font-style: normal;
+}
+nav{
+    padding-bottom: 12px;
+}
+nav a{
+    font-size:  14px;
+    padding: 10px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+h1{
+    font-style: italic;
+    margin-bottom: 0%;
+}
+p#author_date{
+    font-style: italic;
+    font-size: smaller;
+    color:#444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1,h2,h3{
+    color: rgb(24, 196, 196);
+}
+a:link{
+    color: rgb(38, 168, 168);
+}
+a:visited{
+    color: rgb(75, 28, 185);
+}
+li:first-child{
+    font-weight: bold;
+
+}
+li:last-child{
+    font-style: italic;
+}
+li{
+    font-size: 15px;
+}
+aside {
+    width: 50%;
+    background-color: aliceblue;
+    border: 5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(24, 76, 110);
+}
+aside h4{
+    font-weight: bold;
+    font-size: large;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 5px;
+}
+aside ul#related_post li{
+    list-style: none;
+    font-size: small;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+aside ul{
+    margin-top: 0;
+    border: 10px;
+    padding: 10px;
+}
+footer{
+    font-size: small;
+    padding: 10px;
+}
