@@ -1,0 +1,54 @@
+.reciperow {
+    display: flex;
+}
+.inputs {
+    padding: 2%;
+    width:fit-content;
+}
+.buttongroup
+{
+    display: flex;
+}
+.dropbtn
+{
+    background-color: rgba(21, 52, 119, 0.863);
+}
+p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.inputs{
+    padding-top: 1%;
+    padding-left: 0%;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+input
+{
+    padding: 7px;
+    overflow: hidden;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px lightgray;
+}
+input#amount
+{
+    width: 60px;
+}
+button{
+    border: hidden;
+    margin-right: 4px;
+}
+.delete-button{
+    background-color:rgba(255, 0, 0, 0.7) ;
+}
+.clear-button
+{
+    background-color: rgba(0, 0, 255, 0.7);
+}
+.dropbtn
+{
+    position: relative;
+    right: 0;
+}

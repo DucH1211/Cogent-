@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="EmployeeFormEventHandler.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add Student Form</h2> <hr>
+    <h3 id = 'message'> Message Here:</h3>
+    <h3 id = 'message2'> Form Validation Message Here:</h3>
+    <form id = "studentForm"> 
+
+        <label for="firstName">FirstName:</label>
+        <input type="text" name="firstName" id="firstName" required> <br>
+
+        <label for="lastName">LastName:</label>
+        <input type="text" name="lastName" id="lastName" required> <br>
+        
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required> <br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="gender1"> Male <br>
+        <input type="radio" name="gender" id="gender2"> Female <br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" required> <br>
+        
+        <label for="education">Education:</label>
+        <input type="text" name="education" id="education" required> <br>
+        
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob" required> <br><br><br>
+        <button type="submit" >Save Student</button>
+
+      </form>
+</body>
+</html>

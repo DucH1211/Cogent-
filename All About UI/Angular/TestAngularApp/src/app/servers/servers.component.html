@@ -1,0 +1,28 @@
+<p>servers component ran</p>
+<app-server></app-server>
+<label for="serverName"></label>
+<input type = 'text' id = serverName name = serverName class="form-control" [(ngModel)] = "serverName">
+<!-- [( this is 2 ways data bind )] :this will bind a property and perform an action based on event -->
+<p>{{ serverName }}</p>
+<ul *ngFor = "let i of customer"> <!-- this update? dom object-->
+    <!-- * is used to controll dom object, when dom is created using *ngIf or *ngFor for how many dom created -->
+    <li>Id: {{ i.id }}</li>
+    <li>Name: {{ i.name }}</li>
+</ul> 
+
+<select name="switch" id="witch" [(ngModel)] = "selected1"> 
+        <!-- bind ngModel to selected1 and change  -->
+    <option *ngFor = "let i of customer" [value] = "i.name">
+        {{i.name}}
+    </option>
+    <p>Hello</p>
+</select>
+<div [ngSwitch] = selected1 *ngFor = "let i of customer">
+    <p *ngSwitchCase = "i.name"> {{i.name}} is selected</p>
+</div>
+<p>Title From Parents: {{ ctitle }}</p>
+
+
+
+<!-- switch case -->
+

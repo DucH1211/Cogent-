@@ -1,0 +1,121 @@
+section.myFormCard
+{
+    position:relative;
+    display: flex;
+}
+form {
+    box-shadow: 2px 2px gray;
+    background-color: lightgray;
+    border-radius: 0.5em;
+    height: max-content;
+    margin-bottom: 5%;
+    padding: 25px;
+    padding-bottom: 68px;
+    width: 320px;
+}
+input[type=text]
+{
+    padding: 6px;
+    border: hidden;
+    border-radius: 0.5em;
+    cursor: pointer;
+    &:hover{
+        border: solid;
+        border-color: gray;
+    }
+}
+label{
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+p{
+    display: flex;
+    flex-direction: column;
+}
+.forRadio
+{
+    display: block;
+}
+.selectPeople
+{
+    position: relative;
+    top:50px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+select#peopleList{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    border-radius: 0.5em;
+}
+select#country
+{
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 15px;
+    & :hover
+    {
+        box-shadow: 2px 2px lightgray;
+    }
+}
+button[type = 'submit']
+{
+    width: max-content;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    right: 15px;
+    top :7px;
+    bottom:auto;
+
+}
+table ,tr{
+    padding:5px;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+th,tr{
+    padding: 10px;
+}
+
+#alertmessage
+{
+    background-color: rgba(255, 73, 73, 0.801);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px lightgrey;
+    padding: 0.7px;
+    margin:1px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    display: none;
+}
+.paragraph:hover + #alertmessage
+{
+    display:block;
+}
+ul{
+    padding: 10px;
+    background-color: rgb(97, 97, 97);
+}
+li{
+    display: inline;
+    padding: 10px;
+    background-color: black;
+}
+a{
+    color: white;
+}

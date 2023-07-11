@@ -1,0 +1,63 @@
+<section class = 'myFormCard'>
+    <form  #f="ngForm" (ngSubmit)="onSubmit(f)"> 
+  
+      <div class = 'paragraph'>
+        <label for="firstName">First Name</label>
+        <input type="text" required minlength="3" name="firstName" id="firstName" [(ngModel)]="f.value.firstName" #firstName ='ngModel'>
+      </div>
+      <div id = 'alertmessage' *ngIf = "!firstName.valid" class = 'error'>
+        <p *ngIf="firstName.errors?.['required']">
+          First Name is required!
+        </p>
+        <p *ngIf="firstName.errors?.['minlength']">
+          Minimum Length Not Met!
+        </p>
+      </div>
+    
+      <div class = 'paragraph'>
+        <label for="lastName">Last Name</label>
+        <input type="text" required Email name="lastName" id="lastName" [(ngModel)]="f.value.lastName" #lastName ='ngModel' >
+      </div>
+      <div id = 'alertmessage' *ngIf = "!lastName.valid" class = 'error'>
+        <p *ngIf="lastName.errors?.['required']">
+          Last Name is required!
+        </p>
+      </div>
+    
+      <div class = 'paragraph'>
+        <label for="email">Email</label>
+        <input type="text" required name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="f.value.email" #email = "ngModel" >
+      </div>
+      <div id = 'alertmessage' *ngIf = "!email.valid" class = 'error'>
+        <p *ngIf="email.errors?.['required']">
+          Email is required!
+        </p>
+        <p *ngIf = "email.errors?.['pattern']">
+          Invalid Email Format
+        </p>
+      </div>
+    
+      <!-- <div class = 'forRadio'>
+        <label for="gender">Gender</label> <br>
+        Male: <input type="radio" name="gender" id="male" value = 'male' ngModel required> 
+        Female: <input type="radio" name="gender" id="female" value = 'female' ngModel required> 
+      </div> -->
+    
+      <!-- <div class = 'paragraph'>
+        <select name="country" id="country" ngModel required>
+          <option value="">Select country</option>
+          <option *ngFor = "let c of countryList" [ngValue]="c.id" [ngValue]="c.name">
+            {{ c.name }}
+          </option>
+        </select>
+      </div> -->
+    
+      <div class = 'paragraph'>
+        <button type="submit" >Submit</button>
+      </div>
+      <div id = "alertmessage" *ngIf = "!f.valid">
+        <p>Form Invalid</p>
+      </div>
+    </form>
+    <!-- <app-display-info></app-display-info> -->
+  </section>

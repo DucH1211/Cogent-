@@ -1,0 +1,10 @@
+<p>Server Component ran!</p>
+<!-- 'Server is a hardcoded value, you can replace this with any backend data if you like
+    {{ serverid is a number taken from the exported class}}' -->
+<button [disabled] ="allowNewServer" (click) = "onCreateServer()">Add Server</button>
+<!--    [this is property bind]
+        (this is event bind)
+ -->
+ <p *ngIf = "serverCreated"> Server Created</p>
+ <p>{{ 'Server' }} with ID: {{serverid}} is {{ serverStatus }}</p>
+ 

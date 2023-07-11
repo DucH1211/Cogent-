@@ -1,0 +1,16 @@
+
+<button type="button" class = 'newRecipe'>New Recipe</button> <hr>
+<table *ngFor="let i of recipes" >
+    <th>
+        <tr>
+            <h3>{{ i.name }}</h3>
+            {{ i.desc }}
+        </tr>
+    </th>
+    <th>
+        <tr>
+            <img src={{i.image}} alt="recipe picture here"> 
+        </tr>
+    </th>
+    
+</table>

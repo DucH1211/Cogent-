@@ -1,0 +1,10 @@
+<main>
+    <h1>Welcome to {{ title }}</h1>
+    <app-servers [ctitle] = 'title' #child></app-servers>  
+    <p>child data is: {{ child.data }}</p>
+    <!-- [bind a statement from app-servers] : this element need to be @Input 
+        saying it is taking input from another app
+        on right hand side is the element from this app 
+        #child tell the app tag owner that this is a child so parent can access child field with child.<field>   
+    -->
+</main>

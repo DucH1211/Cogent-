@@ -1,0 +1,61 @@
+.selectPeople
+{
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+select#peopleList{
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    border-radius: 0.5em;
+}
+table{
+    padding:5px;
+    border: 1px double lightgray;
+    text-align: center;
+    font-size: larger;
+    box-shadow: 2px 2px rgb(164, 164, 164);
+}
+tr,td{
+    padding: 10px;
+    border: 1px solid gray;
+    &:first-child{
+        background-color: lightgreen;
+        border:none;
+    }
+}
+th{
+    padding:15px;
+    padding-bottom: 15px;
+}
+.row-link{
+    background-color: white;
+    &:hover{
+        background-color: lightgreen;
+    }
+
+}
+.detail-link{
+    &:hover{
+        background-color: lightgreen;
+    }
+}
+button{
+    padding: 10px;
+    background-color: lightcoral;
+    border: hidden;
+    box-shadow: 1px 1px lightgrey;
+    width: 70px;
+    margin:3px;
+    &:nth-child(even)
+    {
+        background-color: lightblue;
+    }
+    &:hover{
+        background-color: lightslategray;
+    }
+}
