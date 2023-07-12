@@ -1,6 +1,7 @@
 package com.cogent.microservices.MicroServiceDemo.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,25 +17,32 @@ import com.cogent.microservices.MicroServiceDemo.entity.Department;
 import com.cogent.microservices.MicroServiceDemo.service.DepartmentService;
 
 @RestController
-@RequestMapping("/api/deparments")
+@RequestMapping("/api/departments")
 public class DepartmentController {
 	@Autowired
 	private DepartmentService dept_service;
+	@GetMapping("")
+	public String departmentWorks(){
+		return "<h1>This Link Works</h1>";
+	}
 	
-	@GetMapping("/getAll_department")
+	@GetMapping("/departments")
 	public List<Department> getAllDepartment()
 	{
-		return dept_service.getAllDepartment();
+		List<Department> result = dept_service.getAllDepartment();
+		System.out.println(result);
+		return result;
 	}
-	@GetMapping("/get_deparment/{id}")
-	public Department getDepartment_Id(@PathVariable("id") int id) {
+	@GetMapping("/departments/{id}")
+	public Optional<Department> getDepartment_Id(@PathVariable("id") int id) {
 		return dept_service.getDepartmentbyId(id);
 	}
-	@PostMapping("/add_department")
+	@PostMapping("/departments")
 	public ResponseEntity<Object> addDeparment(@RequestBody Department theDepartment)
 	{
 		try {
 			dept_service.saveDepartment(theDepartment);
+			System.out.println(theDepartment);
 			return new ResponseEntity<Object>(HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception

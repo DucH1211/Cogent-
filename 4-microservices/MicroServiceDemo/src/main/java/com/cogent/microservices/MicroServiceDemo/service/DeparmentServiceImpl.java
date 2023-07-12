@@ -1,12 +1,19 @@
 package com.cogent.microservices.MicroServiceDemo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.cogent.microservices.MicroServiceDemo.entity.Department;
 import com.cogent.microservices.MicroServiceDemo.repository.DepartmentRepository;
-
+/**
+ * Implementation of DepartmentService
+ * @author tmyho
+ *
+ */
+@Service
 public class DeparmentServiceImpl implements DepartmentService{
 	
 	@Autowired
@@ -15,19 +22,19 @@ public class DeparmentServiceImpl implements DepartmentService{
 	@Override
 	public List<Department> getAllDepartment() {
 		// TODO Auto-generated method stub
-		return null;
+		return jpa_repo.findAll();
 	}
 
 	@Override
 	public Department saveDepartment(Department dept) {
 		// TODO Auto-generated method stub
-		return null;
+		return jpa_repo.save(dept);
 	}
 
 	@Override
-	public Department getDepartmentbyId(int id) {
+	public Optional<Department> getDepartmentbyId(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		return jpa_repo.findById(id);
 	}
 
 }

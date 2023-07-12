@@ -1,6 +1,7 @@
 package com.cogent.microservices.MicroServiceDemo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -30,5 +31,5 @@ public interface DepartmentService {
 	 * @param id
 	 * @return
 	 */
-	public Department getDepartmentbyId(int id);
+	public Optional<Department> getDepartmentbyId(int id);
 }

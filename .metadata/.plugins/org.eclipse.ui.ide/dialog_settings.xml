@@ -12,6 +12,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\EE_Workspace\Cogent\4-microservices\MicroServiceDemo"/>
 			<item value="E:\EE_Workspace\Cogent\ALL About Java\Spring\CRUDSpring (1)"/>
 			<item value="E:\EE_Workspace\Cogent\ALL About Java\Spring with JPA\SpringBootJPADemo\demo2"/>
 			<item value="E:\EE_Workspace\Cogent\ALL About Java\Spring with JPA\AssignmentSpringBoot"/>
