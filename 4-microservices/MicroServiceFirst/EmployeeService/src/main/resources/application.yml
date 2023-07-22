@@ -1,0 +1,15 @@
+server:
+ port: 9002
+
+spring:
+ application:
+  name: employeeservice
+
+eureka:
+ client:
+  registry-with-eureka: true
+  fetch-registry: true
+  service-url: 
+   defaultZone: http://host.docker.internal:9003/eureka
+ instance: 
+  hostname: host.docker.internal

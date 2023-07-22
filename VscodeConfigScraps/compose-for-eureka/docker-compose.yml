@@ -1,0 +1,21 @@
+services:
+ service-registry:
+  image: ducho12016/service-registry:0.0.1
+  container_name: service-registry
+  ports:
+   - "9003:9003"
+ api-gateway:
+  image: ducho12016/cloud-gateway:0.0.3
+  container_name: api-gateway
+  ports:
+   - "9005:9005"
+ departmentService:
+  image: ducho12016/department-service:0.0.1
+  container_name: department-service
+  ports:
+   - "9001:9001"
+ employee-service:
+  image: ducho12016/employee-service:0.0.1
+  container_name: employee-service
+  ports:
+   - "9007:9007"

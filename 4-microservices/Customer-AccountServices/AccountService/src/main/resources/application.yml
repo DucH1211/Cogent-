@@ -1,0 +1,13 @@
+server:
+  port: 9161
+spring:
+  application:
+    name: ACCOUNT-SERVICE
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registry-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9150/eureka

@@ -1,0 +1,30 @@
+server:
+ port: 9005
+
+#This is to configure the Eureka Client
+eureka:
+ client:
+   register-with-eureka: true
+   fetch-registry: true
+   service-url:
+    defaultZone: http://host.docker.internal:9003/eureka
+instance:
+ hostname: host.docker.internal
+spring:
+ application:
+  name: API-Gateway
+ cloud:
+  gateway:
+   routes:
+    - id: employeeService
+      uri: lb://employee-service
+      predicates:
+       - Path=/api/employees/**
+    - id: departmentService
+      uri: lb://departmentservice
+      predicates:
+       - Path=/api/departments/**
+#dev tools dependency will not like this file. it will not read this file with dev
+#URI: Important!!!
+#URI need to match with name shown on server. Case does not matter
+#Predicate: Important!!, wont be able to find the links without it
