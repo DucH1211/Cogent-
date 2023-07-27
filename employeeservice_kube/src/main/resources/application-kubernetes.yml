@@ -1,0 +1,16 @@
+spring:
+ profile:
+  active: dev
+ cloud:
+  loadbalancer:
+   ribbon:
+    enabled: false
+  discovery:
+   locator:
+    enabled: true
+  kubernetes:
+   loadbalancer:
+    enabled: true
+   enabled: true
+   discovery:
+    all-namespaces: true 

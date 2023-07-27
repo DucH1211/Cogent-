@@ -12,6 +12,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\EE_Workspace\Cogent\ALL About Java\SpringSecurity"/>
 			<item value="E:\EE_Workspace\Cogent\4-microservices\MicroServicesWithEureka\employeeservice"/>
 			<item value="E:\EE_Workspace\Cogent\Docker\docker"/>
 			<item value="E:\EE_Workspace\Cogent\rabbitconsumer-producer"/>

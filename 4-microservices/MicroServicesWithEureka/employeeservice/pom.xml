@@ -16,7 +16,6 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.8</spring-cloud.version>
-		<spring.cloud.kubernetes>1.1.10.RELEASE</spring.cloud.kubernetes>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,10 +30,9 @@
     		<groupId>org.springframework.cloud</groupId>
     		<artifactId>spring-cloud-starter-openfeign</artifactId>
   		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-loadbalancer -->
 		<dependency>
-    		<groupId>org.springframework.cloud</groupId>
-    		<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -69,7 +67,8 @@
 	</build>
 
 </project>
-<!-- 		
+<!-- 	
+		<spring.cloud.kubernetes>1.1.10.RELEASE</spring.cloud.kubernetes>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
@@ -85,5 +84,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
-		</dependency>	
+		</dependency>
+	
 		-->
